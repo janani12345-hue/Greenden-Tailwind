@@ -15,7 +15,7 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
         <div>
             <h1 class="font-bold text-2xl">Greenden</h1>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size w-6 h-6 md:hidden">
+        <svg id="menubar" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size w-6 h-6 md:hidden">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
           </svg>
           
@@ -26,19 +26,30 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
             
         </ul>
         </nav>
+         <!--Side navebar-->
+    <section id="sidenave" class="bg-green-100 fixed z-20  top-0 " style="width:50%; height:100vh;right: -50%; ">
+        <div class="text-right p-6"  >
+            <p class="inline cursor-pointer" id="wrong">X</p>
+        </div>
+         <ul class="flex flex-col gap-10 items-center">
+                <li><a class=" text-gray-600 hover:underline hover:text-black" href="index.html">Home</a></li>
+                <li><a class="hover:underline" href="product.html">Products</a></li>
+                <li><a class="hover:underline" href="contact.html">Contact us</a></li>
+            </ul>
+    </section>
         
        
         <!--Products-->
         
             <div class="text-center mt-8">
                 <h1 class="font-bold text-3xl">Our Products</h1>
-                <input class=" mt-4 h-8 border border-black p-4 text-black" style="width:70% " placeholder="Search for a product ">
+                <input id="Search" class=" mt-4 h-8 border border-black p-4 text-black" style="width:70% " placeholder="Search for a product ">
             </div>
         
     
    <!--- products-sale-->
     <section>
-        <div  class="grid grid-cols-2 text-center gap-7 mt-5 md:grid grid-cols-4">
+        <div id="product-container" class="grid grid-cols-2 text-center gap-7 mt-5 md:grid grid-cols-4">
             <div>
                 <img src="./image/Untitled design.png" alt="image1" class="inline transform hover:-translate-y-2 hover:shadow-xl">
                 <h3>Rose pot</h3>
@@ -94,6 +105,7 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam recusandae debitis modi iusto eaque nobis rerum culpa aut, aspernatur quidem consequatur, excepturi eveniet ducimus deleniti, molestiae aperiam tenetur? Dolores, cumque?</p>
         <p>@ 2021 Greenden@com</p>
     </section>
+    <script src="product.js"></script>
      
 </body>
 </html>

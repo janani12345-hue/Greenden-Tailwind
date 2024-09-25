@@ -12,7 +12,7 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
     <!--Navebar-->
     <nav class="bg-green-100 p-3 flex justify-between  shadow-lg items-center sticky top-0">
         <h1 class="text-2xl" >Greeden</h1>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size w-6 h-6 md:hidden">
+        <svg id="menubar" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size w-6 h-6 md:hidden">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
           </svg>
           
@@ -22,6 +22,17 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
             <li><a class="hover:underline" href="contact.html">Contact us</a></li>
         </ul>
     </nav>
+     <!--Side navebar-->
+     <section id="sidenave" class="bg-green-100 fixed z-20  top-0 " style="width:50%; height:100vh;right: -50%; ">
+      <div class="text-right p-6"  >
+          <p class="inline cursor-pointer" id="wrong">X</p>
+      </div>
+       <ul class="flex flex-col gap-10 items-center">
+              <li><a class=" text-gray-600 hover:underline hover:text-black" href="index.html">Home</a></li>
+              <li><a class="hover:underline" href="product.html">Products</a></li>
+              <li><a class="hover:underline" href="contact.html">Contact us</a></li>
+          </ul>
+  </section>
 
 <div class="formbold-main-wrapper">
     <!-- Author: FormBold Team -->
@@ -215,6 +226,9 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam recusandae debitis modi iusto eaque nobis rerum culpa aut, aspernatur quidem consequatur, excepturi eveniet ducimus deleniti, molestiae aperiam tenetur? Dolores, cumque?</p>
     <p>@ 2021 Greenden@com</p>
 </section>
+<script src="contact.js">
+
+</script>
  
 </body>
 </html>

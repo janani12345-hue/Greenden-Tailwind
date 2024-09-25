@@ -1,0 +1,33 @@
+<input tye="text" id="inputBox">
+<div class="Container">
+    <h1>One</h1>
+    <h1>Two</h1>
+    <h1>Three</h1>
+    <h1>Four</h1>
+    <h1>Five</h1>
+    <h1>Six</h1>
+    <h1>Seven</h1>
+    <h1>Eight</h1>
+    <h1>Nine</h1>
+
+</div>
+<script>
+    var input=document.getElementById("inputBox")
+    
+    var container=document.querySelector(".Container")
+    var h1list=container.querySelectorAll("h1")
+    console.log(h1list)
+    
+    input.addEventListener("keyup",function(){
+        var enteredvalue=event.target.value;
+    for(count=0;count<h1list.length;count=count+1){
+        if(h1list[count].textContent.indexOf(enteredvalue)==0){
+            h1list[count].style.display="block"
+        }
+        else{
+            h1list[count].style.display="none"
+        }
+    }
+})
+
+</script>
